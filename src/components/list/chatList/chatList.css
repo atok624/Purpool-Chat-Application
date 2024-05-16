@@ -6,7 +6,8 @@
       align-items: center;
       gap: 20px;
       padding: 20px;
-  
+
+      /* Customizing the search bar */
       .searchBar {
         flex: 1;
         background-color: rgba(17, 25, 40, 0.5);
@@ -16,6 +17,7 @@
         border-radius: 10px;
         padding: 10px;
   
+        /* Customizing the input field */
         input {
           background-color: transparent;
           border: none;
@@ -71,4 +73,3 @@
       }
     }
   }
-  
