@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from "react";
+import Chat from "./components/chat/Chat";
+import Detail from "./components/detail/Detail";
+import List from "./components/list/List";
+import Login from "./components/login/Login";
+import Notification from "./components/notification/Notification";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./lib/firebase";
+import { useUserStore } from "./lib/userStore";
+import { useChatStore } from "./lib/chatStore";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const { currentUser, isLoading, fetchUserInfo } = useUserStore();
+  const { chatId } = useChatStore();
+
+  useEffect(() => {
+    const unSub = onAuthStateChanged(auth, (user) => {
+      fetchUserInfo(user?.uid);
+    });
+
+    return () => {
+      unSub();
+    };
+  }, [fetchUserInfo]);
+
+  if (isLoading) return <div className="loading">Loading...</div>;
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="container">
+        {currentUser ? (
+          <>
+            <List />
+            {chatId && <Chat />}
+            {chatId && <Detail />}
+          </>
+        ) : (
+          <Login />
+        )}
+        <Notification />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

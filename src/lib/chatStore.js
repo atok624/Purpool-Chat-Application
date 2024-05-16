@@ -46,6 +46,6 @@ export const useChatStore = create((set) => ({
       user: null,
       isCurrentUserBlocked: false,
       isReceiverBlocked: false,
-    });
-  },
+    });
+  },
 }));

@@ -1,5 +1,5 @@
 {
-  "name": "purpool-chat-application",
+  "name": "chat-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "emoji-picker-react": "^4.9.2",
+    "firebase": "^10.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "react-toastify": "^10.0.5",
+    "timeago.js": "^4.0.0-beta.3",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
