@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<img src="./public/Purpool.jpg" width="200px" alt="Purpool Logo" />
+<img src="./public/Purpool.jpg" width="40px" alt="Purpool Logo" />
 
 </div>
 <!-- TABLE OF CONTENTS -->
