@@ -42,6 +42,7 @@
       }
     }
   
+    /* Item Display */
     .item {
       display: flex;
       align-items: center;
