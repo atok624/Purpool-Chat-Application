@@ -144,7 +144,7 @@ To run the project, execute the following command:
 -  ### [Jessica Oppong](https://github.com/Amankwaa97)
 -  ### [Godwin Ahiable](https://github.com/Godwinkay)
 
--  ### Here is the link to the final view Kanban board, showing the various tasks in this project [Final Kanban board](https://github.com/users/Mov305/projects/5)
+-  ### Here is the link to the final view Kanban board, showing the various tasks in this project [Final Kanban board]((https://github.com/users/atok624/projects/7))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
