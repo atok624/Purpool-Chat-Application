@@ -136,7 +136,9 @@ To run the project, execute the following command:
 - [GitHub](https://github.com/Amankwaa97)
 
 👤 **Reuben Idan 💻**
-- [GitHub](https://github.com/reuben-idan)
+- Follow on [GitHub](https://github.com/reuben-idan)
+- Connect on [Linkedin](https://www.linkedin.com/in/reuben-idan/)
+- Follow on [Twitter](https://twitter.com/AdroitIdan)
 
 👤 **Frances Obaze 💻**
 - [GitHub](https://github.com/FranObaze)
