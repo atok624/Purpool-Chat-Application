@@ -141,7 +141,9 @@ To run the project, execute the following command:
 - Follow on [Twitter](https://twitter.com/AdroitIdan)
 
 👤 **Frances Obaze 💻**
-- [GitHub](https://github.com/FranObaze)
+- Follow on [GitHub](https://github.com/FranObaze)
+- Connect on [Linkedin](https://www.linkedin.com/in/reuben-idan/)
+- Follow on [Twitter](https://twitter.com/AdroitIdan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
