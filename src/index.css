@@ -1,33 +1,63 @@
+/* First Typeface */
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.ttf") format("ttf"),
+  url("fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+/* Second Typeface */
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.ttf") format("ttf"),
+  url("fonts/Lato-Bold.ttf") format("ttf");
+}
+
+/* For all other properties not styled */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+/* For the headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+
 body {
-  background-image: url("/bg_1.png");
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  background: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
   color: white;
 }
 
 .container {
-  width: 90vw;
+  width: 100vw;
   height: 90vh;
-  background-color: indigo;
-  backdrop-filter: blur(19px) saturate(180%);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
   display: flex;
+  align-items: center;
 }
 
-.loading{
+.loading {
   padding: 50px;
-  font-size: 36px;
+  font-size: 30px;
   border-radius: 10px;
-  background-color: rgba(17, 25, 40, 0.9);
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: purple;
 }

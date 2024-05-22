@@ -15,6 +15,7 @@ import {
 } from "firebase/firestore";
 import upload from "../../lib/upload";
 import { useState } from "react";
+import { useRef } from "react";
 
 const Login = () => {
   const [avatar, setAvatar] = useState({
@@ -97,76 +98,92 @@ const Login = () => {
     }
   };
 
+
+
   return (
     <div className="login">
       {!isSignUp && (
-        <section className="vh-100">
+        <div>
           <div className="container">
             <div className="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                alt="login form"
-                className="card-img"
-              />
-              <div className="card-body">
-                <div className="logo">
-                  <i className="fas fa-cubes"></i>
-                  <img className="purpool" src="/public/Purpool.jpg" alt="" />
-                </div>
-                <h5 className="fw-normal mb-3">Sign into your account</h5>
+              <div className="card-img"> </div>
+              <div className="form-box signin">
+                <h2>Sign In</h2>
                 <form onSubmit={handleLogin} className="centered-form">
-                  <input type="text" className="form-control" placeholder="Email" name="email" />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    className="form-control"
-                  />
-                  <div className="pt-1">
-                    <button className="btn btn-login" disabled={loading}>
-                      {loading ? "Loading" : "Sign In"}
-                    </button>
+                  <div className="input-box">
+                    <span className="icon">
+                      <img src="./mail.png" alt="mail icon" />
+                    </span>
+                    <input
+                      type="email"
+                      title="Email"
+                      placeholder=" "
+                      required
+                    />
+                    <label>Email</label>
                   </div>
-                  <a href="#" className="small">
-                    Forgot password?
-                  </a>
-                  <p className="small" onClick={() => setIsSignUp(true)}>
-                    don&rsquo;t have an account?{" "}
-                    <a href="#" className="text-muted">
-                      Register here
+                  <div className="input-box">
+                    <span className="icon">
+                      <img src="./password.png" alt="password icon" />
+                    </span>
+                    <input
+                      type="password"
+                      title="Password"
+                      placeholder=" "
+                      required
+                    />
+                    <label>Password</label>
+                  </div>
+
+                  <div className="forgot-password">
+                    <a href="#" title="Forgot Password">
+                      Forgot Password?
                     </a>
-                  </p>
-                  <a href="#" className="small">
-                    Terms of use.
-                  </a>
-                  <a href="#" className="small">
-                    Privacy policy
-                  </a>
+                  </div>
+
+                  <button className="btn" disabled={loading}>
+                    {loading ? "Loading" : "Sign In"}
+                  </button>
+
+                  <div className="signin-signup">
+                    <p onClick={() => setIsSignUp(true)}>
+                      Don&rsquo;t have an account?{" "}
+                      <a
+                        href="#"
+                        className="signup-reference"
+                      >
+                        Sign Up
+                      </a>
+                    </p>
+                  </div>
+
+                  <div className="signin-signup">
+                    <p>
+                      <a href="#">Terms of use </a> •{" "}
+                      <a href="#"> Privacy policy</a>
+                    </p>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       )}
+
       {isSignUp && (
-        <section className="vh-100">
+        <div>
           <div className="container">
             <div className="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                alt="login form"
-                className="card-img"
-              />
-              <div className="card-body">
-                <h5 className="fw-normal mb-3">Create your account</h5>
+              <div className="card-img"> </div>
+              <div className="form-box signup">
+                <h2>Sign Up</h2>
                 <form onSubmit={handleRegister} className="centered-form">
-                  <label className="label_2" htmlFor="file">
+                  <label htmlFor="file">
                     <img
-                      className="image_2"
+                      className="avatar"
                       src={avatar.url || "./avatar.png"}
-                      alt=""
+                      alt="User's Avatar"
                     />
-                    Upload an image
                   </label>
                   <input
                     type="file"
@@ -174,39 +191,71 @@ const Login = () => {
                     style={{ display: "none" }}
                     onChange={handleAvatar}
                   />
-                  <input type="text" placeholder="Username" name="username" className="form-control" />
-                  <input type="text" placeholder="Email" name="email" className="form-control" />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    className="form-control"
-                  />
-                  <div className="pt-1">
-                    <button className="btn btn-login" disabled={loading}>
-                      {loading ? "Loading" : "Sign Up"}
-                    </button>
+
+                  <div className="input-box">
+                    <span className="icon">
+                      <img src="./user.png" alt="user icon" />
+                    </span>
+                    <input
+                      type="text"
+                      title="Username"
+                      placeholder=" "
+                      required
+                    />
+                    <label>Username</label>
                   </div>
-                  <a href="#" className="small">
-                    Forgot password?
-                  </a>
-                  <p className="small" onClick={() => setIsSignUp(false)}>
-                    don&rsquo;t have an account?{" "}
-                    <a href="#" className="text-muted">
-                      Register here
-                    </a>
-                  </p>
-                  <a href="#" className="small">
-                    Terms of use.
-                  </a>
-                  <a href="#" className="small">
-                    Privacy policy
-                  </a>
+                  <div className="input-box">
+                    <span className="icon">
+                      <img src="./mail.png" alt="mail icon" />
+                    </span>
+                    <input
+                      type="email"
+                      title="Email"
+                      placeholder=" "
+                      required
+                    />
+                    <label>Email</label>
+                  </div>
+                  <div className="input-box">
+                    <span className="icon">
+                      <img src="./password.png" alt="password icon" />
+                    </span>
+                    <input
+                      type="password"
+                      title="Password"
+                      placeholder=" "
+                      required
+                    />
+                    <label>Password</label>
+                  </div>
+
+                  <button className="btn" disabled={loading}>
+                    {loading ? "Loading" : "Sign Up"}
+                  </button>
+
+                  <div className="signin-signup">
+                    <p onClick={() => setIsSignUp(false)}>
+                      You already have an account?{" "}
+                      <a
+                        href="#"
+                        className="signin-reference"
+                      >
+                        Sign In
+                      </a>
+                    </p>
+                  </div>
+
+                  <div className="signin-signup">
+                    <p>
+                      <a href="#">Terms of use </a> •{" "}
+                      <a href="#"> Privacy policy</a>
+                    </p>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       )}
     </div>
   );
