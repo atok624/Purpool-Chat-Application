@@ -92,6 +92,7 @@ body {
     background-size: contain;
     background-position: center;
 }
+
 .card-img-signup {
     width: 110%;
     height: auto;
@@ -136,7 +137,6 @@ body {
     color: purple;
 }
 
-
 .signin-signup {
     font-size: 0.9em;
     color: white;
@@ -144,7 +144,6 @@ body {
     font-weight: 500;
     margin: 25px 0 10px;
 }
-
 
 .signin-signup p a {
     color: white;
@@ -180,7 +179,6 @@ body {
     padding: 34px;
     align-items: center;
 }
-
 
 /* For the heading in the form */
 .form-box h2 {
@@ -258,8 +256,6 @@ body {
     color: white;
     line-height: 52px;
 }
-
-
 
 
 @media (max-width: 768px) {
