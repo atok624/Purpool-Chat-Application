@@ -42,15 +42,21 @@ const Login = () => {
     const { username, email, password } = Object.fromEntries(formData);
 
     // VALIDATE INPUTS
-    if (!username || !email || !password)
+    if (!username || !email || !password) {
+      setLoading(false);
       return toast.warn("Please enter inputs!");
-    if (!avatar.file) return toast.warn("Please upload an avatar!");
+    }
+    if (!avatar.file) {
+      setLoading(false);
+      return toast.warn("Please upload an avatar!");
+    }
 
     // VALIDATE UNIQUE USERNAME
     const usersRef = collection(db, "users");
     const q = query(usersRef, where("username", "==", username));
     const querySnapshot = await getDocs(q);
     if (!querySnapshot.empty) {
+      setLoading(false);
       return toast.warn("Select another username");
     }
 
@@ -113,6 +119,7 @@ const Login = () => {
                     </span>
                     <input
                       type="email"
+                      name="email"
                       title="Email"
                       placeholder=" "
                       required
@@ -125,6 +132,7 @@ const Login = () => {
                     </span>
                     <input
                       type="password"
+                      name="password"
                       title="Password"
                       placeholder=" "
                       required
@@ -201,6 +209,7 @@ const Login = () => {
                     </span>
                     <input
                       type="text"
+                      name="username"
                       title="Username"
                       placeholder=" "
                       required
@@ -213,6 +222,7 @@ const Login = () => {
                     </span>
                     <input
                       type="email"
+                      name="email"
                       title="Email"
                       placeholder=" "
                       required
@@ -225,6 +235,7 @@ const Login = () => {
                     </span>
                     <input
                       type="password"
+                      name="password"
                       title="Password"
                       placeholder=" "
                       required
