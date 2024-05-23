@@ -15,7 +15,6 @@ import {
 } from "firebase/firestore";
 import upload from "../../lib/upload";
 import { useState } from "react";
-import { useRef } from "react";
 
 const Login = () => {
   const [avatar, setAvatar] = useState({
@@ -98,15 +97,13 @@ const Login = () => {
     }
   };
 
-
-
   return (
     <div className="login">
       {!isSignUp && (
         <div>
           <div className="container">
             <div className="card">
-              <div className="card-img"> </div>
+              <div className="card-img-signin"> </div>
               <div className="form-box signin">
                 <h2>Sign In</h2>
                 <form onSubmit={handleLogin} className="centered-form">
@@ -148,10 +145,7 @@ const Login = () => {
                   <div className="signin-signup">
                     <p onClick={() => setIsSignUp(true)}>
                       Don&rsquo;t have an account?{" "}
-                      <a
-                        href="#"
-                        className="signup-reference"
-                      >
+                      <a href="#" className="signup-reference">
                         Sign Up
                       </a>
                     </p>
@@ -174,7 +168,16 @@ const Login = () => {
         <div>
           <div className="container">
             <div className="card">
-              <div className="card-img"> </div>
+              <div className="card-img-signup">
+                <img
+                  className="purpool"
+                  src="./Purpool-Cropped.jpg"
+                  alt=""
+                />
+                <h2>Welcome to the</h2>
+                <h1 className="purple-text">Purpool Chat App</h1>
+                <h4> - Connect with your Peers - </h4>
+              </div>
               <div className="form-box signup">
                 <h2>Sign Up</h2>
                 <form onSubmit={handleRegister} className="centered-form">
@@ -236,10 +239,7 @@ const Login = () => {
                   <div className="signin-signup">
                     <p onClick={() => setIsSignUp(false)}>
                       You already have an account?{" "}
-                      <a
-                        href="#"
-                        className="signin-reference"
-                      >
+                      <a href="#" className="signin-reference">
                         Sign In
                       </a>
                     </p>
