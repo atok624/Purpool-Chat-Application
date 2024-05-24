@@ -71,7 +71,7 @@ const Login = () => {
         chats: [],
       });
 
-      toast.success("Account created! You can login now!");
+      toast.success("Account created! You can Sign In now!");
     } catch (err) {
       console.log(err);
       toast.error(err.message);

@@ -9,8 +9,8 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Book-a-room App ](#-Purpool-Chat-Application)
-  - [Live Demo](#live-demo)
+- [Purpool Chat Application ](#purpool-chat-application-)
+    - [Live Demo](#live-demo)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -165,9 +165,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Signup page**
-- **Login page**
-- **Main page**
+- **Sign Up page**
+- **Sign In page**
+- **Chat page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
