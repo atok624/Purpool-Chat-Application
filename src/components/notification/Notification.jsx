@@ -4,7 +4,7 @@ import './notification.css'
 
 const Notification = () => {
   return (
-    <div className='toast'>
+    <div className="toast">
       <ToastContainer position="bottom-right"/>
     </div>
   )
