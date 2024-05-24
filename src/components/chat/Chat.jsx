@@ -113,6 +113,7 @@ const Chat = () => {
 
   return (
     <div className="chat">
+
       <div className="top">
         <div className="user">
           <img src={user?.avatar || "./avatar.png"} alt="" />
@@ -127,6 +128,7 @@ const Chat = () => {
           <img src="./info.png" alt="" />
         </div>
       </div>
+
       <div className="center">
         {chat?.messages?.map((message) => (
           <div
@@ -151,6 +153,7 @@ const Chat = () => {
         )}
         <div ref={endRef}></div>
       </div>
+
       <div className="bottom">
         <div className="icons">
           <label htmlFor="file">

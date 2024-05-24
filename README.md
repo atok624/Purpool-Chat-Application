@@ -71,7 +71,7 @@
 ### Key Features <a name="key-features"></a>
 
 ```
-- User Authentication: Secure login and signup pages for user authentication. 
+- User Authentication: Secure signin and signup pages for user authentication. 
 - Main Chat Interface: A dynamic and interactive main chat page where users can communicate seamlessly.
 ```
 

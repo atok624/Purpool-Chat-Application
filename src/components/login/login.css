@@ -31,9 +31,21 @@ h6 {
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url("./background.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    overflow: auto;
+    padding: auto;
+    max-height: 90%;
+  }
 
 .container {
     max-width: 1200px;
@@ -43,6 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 
 .avatar {
@@ -78,7 +91,7 @@ body {
     display: flex;
     color: white;
     transition: transform 0.5s ease, height 0.2s ease;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -211,6 +224,7 @@ body {
     width: 100%;
     height: 46px;
     border-bottom: 2px solid white;
+    background: transparent;
     margin: 20px 0;
 }
 

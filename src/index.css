@@ -42,6 +42,9 @@ body {
   flex-direction: column;
   color: white;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  padding: auto;
+  max-height: 90%;
 }
 
 .loading {

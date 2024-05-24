@@ -98,10 +98,10 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
+    <div>
       {!isSignUp && (
         <div>
-          <div className="container">
+          <div>
             <div className="card">
               <div className="card-img-signin"> </div>
               <div className="form-box signin">
@@ -163,7 +163,6 @@ const Login = () => {
           </div>
         </div>
       )}
-
       {isSignUp && (
         <div>
           <div className="container">
