@@ -70,6 +70,8 @@ const ChatList = () => {
 
   return (
     <div className="chatList">
+      
+      <div className="scrollable-element">
       <div className="search">
         <div className="searchBar">
           <img src="./search.png" alt="" />
@@ -115,6 +117,7 @@ const ChatList = () => {
       ))}
 
       {addMode && <AddUser />}
+      </div>
     </div>
   );
 };

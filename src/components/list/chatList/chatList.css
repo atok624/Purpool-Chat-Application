@@ -1,6 +1,5 @@
 .chatList {
   flex: 1;
-  overflow: scroll;
   .search {
     display: flex;
     align-items: center;
@@ -9,7 +8,7 @@
 
     .searchBar {
       flex: 1;
-      background-color: rgba(17, 25, 40, 0.5);
+      background-color: rgba(17, 25, 40, 0.7);
       display: flex;
       align-items: center;
       gap: 20px;
@@ -33,7 +32,7 @@
     .add {
       width: 36px;
       height: 36px;
-      background-color: rgba(17, 25, 40, 0.5);
+      background-color: rgba(17, 25, 40, 0.7);
       padding: 10px;
       border-radius: 10px;
       cursor: pointer;
@@ -70,4 +69,42 @@
       }
     }
   }
+}
+
+/* This applies to the element you want the scrollbars on */
+.scrollable-element {
+  overflow: auto;
+}
+
+/* Target Chrome, Firefox, and Safari */
+.scrollable-element::-webkit-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.scrollable-element::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
+}
+
+/* Target Firefox */
+.scrollable-element::-moz-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.scrollable-element::-moz-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
+}
+
+/* Target Internet Explorer (older versions) */
+.scrollable-element::-ms-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.scrollable-element::-ms-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
 }

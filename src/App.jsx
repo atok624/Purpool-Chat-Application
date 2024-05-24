@@ -8,6 +8,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
 import { useChatStore } from "./lib/chatStore";
+import './App.css'
 
 const App = () => {
   const { currentUser, isLoading, fetchUserInfo } = useUserStore();
