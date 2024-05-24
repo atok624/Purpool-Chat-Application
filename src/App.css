@@ -35,6 +35,7 @@ h6 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -66,10 +67,46 @@ h6 {
   }
 }
 
-.card {
-  padding: 2em;
+.container {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  background-color: purple;
+  overflow: auto;
+  margin: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Target Chrome, Firefox, and Safari */
+.container::-webkit-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
+}
+
+/* Target Firefox */
+.container::-moz-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.container::-moz-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
+}
+
+/* Target Internet Explorer (older versions) */
+.container::-ms-scrollbar {
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+}
+
+.container::-ms-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Change background color here */
+  border-radius: 10px; /* Adjust roundness here */
 }
