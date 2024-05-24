@@ -1,0 +1,28 @@
+.toast {
+    /* Base styles for all notifications */
+    padding: 16px;
+    border-radius: 4px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+  }
+  
+  .toast--success {
+    background-color: green;
+    color: white;
+  }
+  
+  .toast--error {
+    background-color: red;
+    color: white;
+  }
+  
+  .toast--info {
+    background-color: purple;
+    color: white;
+  }
+  
+  .toast__message {
+    /* Style for the notification text */
+    background-color: purple;
+    color: white;
+  }
+  

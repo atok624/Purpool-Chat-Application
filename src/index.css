@@ -41,6 +41,7 @@ body {
   background-position: center;
   flex-direction: column;
   color: white;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .container {
