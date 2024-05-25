@@ -81,7 +81,7 @@
 
 ### Prerequisites
 
-In order to run this project you need: Configure your code editor with HTML , CSS & JS and some other important extensions
+To run this project you need to configure your code editor with HTML, CSS & JS, and some other important extensions
 
 ### Setup
 
@@ -120,9 +120,9 @@ To run the project, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Nicholas Amissah 💻**
-- GitHub: [@atok624](https://github.com/atok624)
-- Twitter: [@atok624](https://twitter.com/mysticalamissah)
-- LinkedIn: [@atok624](https://linkedin.com/in/nicholas-amissah-153b09154)
+- GitHub: [Github](https://github.com/atok624)
+- Twitter: [Twitter](https://twitter.com/mysticalamissah)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-amissah-153b09154)
 
 👤 **Gideon Agyage 💻**
 - Follow on [GitHub](https://github.com/gideonagyage)
@@ -148,7 +148,7 @@ To run the project, execute the following command:
 
 ## 📋 Kanban Board 📋
 
-``` There are 6 contributors for this project:```
+``` There are 6 contributors to this project:```
 
 -  ### [Reuben Idan](https://github.com/reuben-idan)
 -  ### [Nicholas Amissah](https://github.com/atok624)
@@ -193,7 +193,7 @@ If you like this project, please clone it and try it. I know you're going to lov
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank ```Emmanuel Fiifi Essel``` and ```Roberta Akoto``` for the love and encouragement. We'd also want to thank Generation Ghana(staffs, mentors, reviewers) for giving us the knowledge to build an amazing project like this.
+We would like to thank ```Emmanuel Fiifi Essel``` and ``` Roberta Akoto``` for their love and encouragement. We'd also like to thank Generation Ghana(staff, mentors, reviewers) for giving us the knowledge to build an amazing project like this.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,12 +203,12 @@ We would like to thank ```Emmanuel Fiifi Essel``` and ```Roberta Akoto``` for th
 
 - **Can I fork the project and make a contribution?**
 
-  Of course you can! First fork it and contribute to it.
+  Of course, you can! First, fork it and contribute to it.
 
 - **How should I ask a pull request**
 
-  - Step 1 : Click on the pull request button
-  - Step 2 : create pull request
+  - Step 1: Click on the pull request button
+  - Step 2: create pull request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
