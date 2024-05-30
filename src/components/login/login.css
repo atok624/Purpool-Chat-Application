@@ -37,8 +37,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    max-width: 1200px;
+.container-box {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     height: 100vh;
@@ -177,6 +177,9 @@ body {
 .card .form-box {
     width: 100%;
     padding: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -202,7 +205,8 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: column; 
     margin: 36px;
     overflow: hidden;
 }
@@ -245,7 +249,11 @@ body {
     background: transparent;
     background-color: transparent;
     font-weight: 600;
-    padding: 0 35px 0 5px;
+    padding: 0 135px 0 5px;
+}
+
+.input-box input:focus{
+    background-color: transparent;
 }
 
 .input-box .icon {

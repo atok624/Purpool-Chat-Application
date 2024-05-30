@@ -41,7 +41,7 @@ const Chat = () => {
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [chat.messages]); // Depend on chat.messages for scrolling
+  }, [chat.messages]);
 
   const handleEmoji = (e) => {
     setText((prev) => prev + e.emoji);
@@ -133,7 +133,7 @@ const Chat = () => {
             className={
               message.senderId === currentUser?.id ? "message own" : "message"
             }
-            key={message?.createdAt} // Change to createdAt (typo corrected)
+            key={message?.createdAt}
           >
             <div className="texts">
               {message.img && <img src={message.img} alt="" />}

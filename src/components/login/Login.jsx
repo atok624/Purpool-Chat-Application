@@ -106,10 +106,11 @@ const Login = () => {
   return (
     <div className="login">
       {!isSignUp && (
-        <div>
-          <div className="container">
+        <div >
+          <div className="container-box">
             <div className="card">
-              <div className="card-img-signin"> </div>
+              <div className="card-img-signin"> 
+              </div>
               <div className="form-box signin">
                 <h2>Sign In</h2>
                 <form onSubmit={handleLogin} className="centered-form">
@@ -174,7 +175,7 @@ const Login = () => {
 
       {isSignUp && (
         <div>
-          <div className="container">
+          <div className="container-box">
             <div className="card">
               <div className="card-img-signup">
                 <img
